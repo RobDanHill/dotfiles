@@ -1,5 +1,6 @@
 return {
-	{ "ellisonleao/gruvbox.nvim", priority = 1000 },
+  { "yorickpeterse/vim-paper", priority = 1000 },
+	{ "ellisonleao/gruvbox.nvim", lazy = true },
 	{ "folke/tokyonight.nvim", lazy = true },
 	{ "projekt0n/github-nvim-theme", lazy = true },
 	{ "Yazeed1s/minimal.nvim", lazy = true },
@@ -16,7 +17,6 @@ return {
 	{
 		"blazkowolf/gruber-darker.nvim",
 		dev = true,
-		lazy = true,
 		-- priority = 1000,
 	},
 }

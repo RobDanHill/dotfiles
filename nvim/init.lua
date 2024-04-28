@@ -39,7 +39,7 @@ require("lazy").setup({
 	},
 	install = {
 		-- colorscheme = { "gruber-darker" },
-		colorscheme = { "gruvbox" },
+		colorscheme = { "paper" },
 	},
 	ui = {
 		border = "rounded",
