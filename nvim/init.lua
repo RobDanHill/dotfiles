@@ -13,7 +13,7 @@ vim.g.maplocalleader = vim.api.nvim_replace_termcodes("<space>", true, true, tru
 -- Bootstrap plugin manager
 -- Snippet from https://github.com/folke/lazy.nvim#-installation
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
+if not vim.uv.fs_stat(lazypath) then
 	vim.fn.system({
 		"git",
 		"clone",
@@ -25,10 +25,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("blaz.globals")
-require("blaz.editor")
-require("blaz.keymap")
-
 require("lazy").setup({
 	spec = {
 		{ import = "plugins" },
@@ -39,7 +35,7 @@ require("lazy").setup({
 	},
 	install = {
 		-- colorscheme = { "gruber-darker" },
-		colorscheme = { "paper" },
+		colorscheme = { "default" },
 	},
 	ui = {
 		border = "rounded",

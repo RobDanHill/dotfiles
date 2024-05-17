@@ -16,16 +16,15 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- I want to disable some options in terminal buffers
-local terminal_buffer_group = vim.api.nvim_create_augroup("TerminalOpts", { clear = true })
 vim.api.nvim_create_autocmd("TermOpen", {
+	group = vim.api.nvim_create_augroup("TerminalOpts", {}),
 	callback = function()
 		vim.opt_local.number = false
 		vim.opt_local.relativenumber = false
+		vim.opt_local.scrolloff = 0
 		vim.opt_local.signcolumn = "no"
 		vim.opt_local.wrap = false
 	end,
-	group = terminal_buffer_group,
-	pattern = "*",
 })
 
 vim.opt.backup = false
