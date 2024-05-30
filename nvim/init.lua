@@ -41,6 +41,3 @@ require("lazy").setup({
 		border = "rounded",
 	},
 })
-
--- The following must be `required` after plugins load
-require("blaz.lsp")
