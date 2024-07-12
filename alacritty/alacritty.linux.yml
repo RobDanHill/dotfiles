@@ -125,23 +125,27 @@ window:
 font:
   # Normal (roman) font face
   normal:
-    family: CaskaydiaCove Nerd Font
+    # family: CaskaydiaCove Nerd Font
     # family: IntelOneMono Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Regular
 
   bold:
-    family: CaskaydiaCove Nerd Font
+    # family: CaskaydiaCove Nerd Font
     # family: IntelOneMono Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Bold
 
   italic:
-    family: CaskaydiaCove Nerd Font
+    # family: CaskaydiaCove Nerd Font
     # family: IntelOneMono Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Italic
 
   bold_italic:
-    family: CaskaydiaCove Nerd Font
+    # family: CaskaydiaCove Nerd Font
     # family: IntelOneMono Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Bold Italic
 
   # Point size
