@@ -5,7 +5,8 @@ local notify = require("blaz.helper.notify")
 -- vim.cmd.colorscheme("default")
 
 -- local colorscheme = "default"
-local colorscheme = "gruber-darker"
+-- local colorscheme = "gruber-darker"
+local colorscheme = "gruvbox"
 -- local colorscheme = "paper"
 
 local ok, _ = pcall(vim.cmd.colorscheme, colorscheme)
