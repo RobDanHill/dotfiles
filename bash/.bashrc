@@ -31,4 +31,3 @@ unset rc
 
 eval "$(starship init bash)"
 eval "$(mise activate bash)"
-source ~/dev/alacritty/extra/completions/alacritty.bash
