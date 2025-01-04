@@ -18,10 +18,6 @@ if [ -d "$HOME/bin" ]; then
 	PATH="$HOME/bin:$PATH"
 fi
 
-if [ -d "$HOME/.config/emacs/bin" ]; then
-  PATH="$HOME/.config/emacs/bin:$PATH"
-fi
-
 # export PATH
 
 if [ -z "$XDG_CONFIG_HOME" ]; then
