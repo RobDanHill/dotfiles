@@ -8,7 +8,13 @@ return {
 	version = "*",
 	opts = {
 		-- 'default' for mappings similar to built-in completion
-		keymap = { preset = "default" },
+		keymap = {
+			preset = "default",
+			["<C-k>"] = { "select_prev", "fallback_to_mappings" },
+			["<C-j>"] = { "select_next", "fallback_to_mappings" },
+			["C-p"] = {},
+			["C-n"] = {},
+		},
 		appearance = {
 			-- Sets the fallback highlight groups to nvim-cmp's highlight groups
 			-- Useful for when your theme doesn't support blink.cmp
